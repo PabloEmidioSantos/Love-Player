@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Player</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <main class="conteudo">
+    <div class="player">
+      <h1>❤️Love❤️Player❤️</h1>
+
+      <p id="musica-nome">Selecione uma música</p>
+
+      <audio id="audio"></audio>
+
+      <input type="range" id="progresso" value="0">
+
+      <div class="tempo">
+        <span id="atual">0:00</span>
+        <span id="duracao">0:00</span>
+      </div>
+
+      <div class="controles">
+        <button onclick="anterior()">⏮</button>
+        <button id="btnPlay" onclick="playPause()">▶️</button>
+        <button onclick="proxima()">⏭</button>
+        <button id="btnRepeat" onclick="alternarRepeat()">🔁</button>
+      </div>
+
+      <ul id="playlist"></ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      Site feito por
+      <a href="https://www.linkedin.com/in/pabloemidiodossantos/" target="_blank">
+        Pablo Emidio dos Santos
+      </a>, dev junior
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

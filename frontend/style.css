@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout geral */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(circle at top, #1b002d, #050008);
+  font-family: Arial, sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Centraliza apenas o player */
+.conteudo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Player */
+.player {
+  width: 360px;
+  max-width: 100%;
+  background: #0d0d0d;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 30px rgba(128, 0, 255, 0.4);
+}
+
+.player h1 {
+  text-align: center;
+  color: #a855f7;
+  margin-bottom: 5px;
+}
+
+#musica-nome {
+  text-align: center;
+  font-size: 14px;
+  color: #22c55e;
+  margin-bottom: 15px;
+}
+
+#progresso {
+  width: 100%;
+  margin: 10px 0;
+  accent-color: #a855f7;
+}
+
+.tempo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #bbb;
+}
+
+/* Controles */
+.controles {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.controles button {
+  background: #1f1f1f;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.controles button:hover {
+  background: #a855f7;
+}
+
+/* Playlist */
+ul {
+  list-style: none;
+  max-height: 160px;
+  overflow-y: auto;
+}
+
+li {
+  padding: 8px;
+  font-size: 13px;
+  border-bottom: 1px solid #222;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+li:hover {
+  background: #1f1f1f;
+  color: #22c55e;
+}
+
+/* Repeat */
+#btnRepeat {
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+#btnRepeat.ativo {
+  background: #a855f7;
+  color: #fff;
+  opacity: 1;
+}
+
+#btnRepeat.musica {
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.8);
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+footer p {
+  font-size: 0.95rem;
+  color: #cfcfcf;
+}
+
+footer a {
+  color: #7c3aed;
+  text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .player {
+    width: 100%;
+  }
+
+  footer p {
+    font-size: 0.85rem;
+  }
+}
