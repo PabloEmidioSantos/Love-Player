@@ -6,6 +6,7 @@ Uma aplicação de reprodução de músicas moderna e bem estruturada, com **bac
 
 Este projeto demonstra boas práticas de desenvolvimento:
 - ✅ Backend bem estruturado e modular
+- ✅ Frontend estático compatível com GitHub Pages
 - ✅ Separação clara de responsabilidades
 - ✅ Fácil de entender e manter
 - ✅ Documentação completa
@@ -23,15 +24,13 @@ Love-Player/
 ├── requirements.txt            # 📦 Dependências Python
 ├── .env                        # 🔐 Variáveis de ambiente
 ├── README.md                   # 📚 Este arquivo
-│
-└── frontend/
-    ├── index.html              # 🌐 HTML do player
-    ├── script.js               # 🎮 Lógica do player
-    ├── style.css               # 🎨 Estilos
-    └── musicas/                # 🎶 Pasta com as músicas
-        ├── amor-e-fe.mp3
-        ├── baby-ce-e-gata.mp3
-        └── ...
+├── index.html                  # 🌐 HTML do player
+├── script.js                   # 🎮 Lógica do player
+├── style.css                   # 🎨 Estilos
+└── musicas/                    # 🎶 Pasta com as músicas
+    ├── amor-e-fe.mp3
+    ├── baby-ce-e-gata.mp3
+    └── ...
 ```
 
 ## 🚀 Como Executar
@@ -88,6 +87,19 @@ Você verá:
 ### 3️⃣ Acessar a Aplicação
 
 Abra o navegador e acesse: **http://localhost:1905**
+
+---
+
+## 🌐 Deploy no GitHub Pages
+
+Este projeto também funciona como um site estático para o GitHub Pages.
+
+- Copie todos os arquivos do projeto para um repositório no GitHub.
+- No repositório, ative o GitHub Pages usando a branch `main` (ou `master`) e publique a raiz do projeto.
+- O site será servido a partir de `index.html` com `script.js`, `style.css` e a pasta `musicas/`.
+- O arquivo oculto `.nojekyll` já está incluído para evitar o processamento Jekyll.
+
+> Atenção: o backend Python (`app.py`) não roda no GitHub Pages. O deployment estático usa somente os arquivos do frontend.
 
 ---
 

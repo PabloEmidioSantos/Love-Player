@@ -27,9 +27,9 @@ class Config:
     # JSON será ordenado alfabeticamente
     JSON_SORT_KEYS = False
     
-    # Pasta dos arquivos estáticos
-    STATIC_FOLDER = 'frontend'
-    STATIC_URL_PATH = '/static'
+    # Pasta dos arquivos estáticos (raiz do projeto)
+    STATIC_FOLDER = '.'
+    STATIC_URL_PATH = ''
     
     # Porta padrão
     PORT = int(os.getenv('PORT', 1905))

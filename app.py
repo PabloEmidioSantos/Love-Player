@@ -51,7 +51,7 @@ def criar_app():
         Quando o usuário acessa localhost:1905, ele recebe o index.html
         que contém o player de música.
         """
-        return render_template('index.html')
+        return app.send_static_file('index.html')
     
     @app.errorhandler(404)
     def nao_encontrado(erro):
