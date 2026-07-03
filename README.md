@@ -2,7 +2,7 @@
 
 _Esta aplicação foi desenvolvida por [Pablo Emidio dos Santos](https://github.com/PabloEmidioSantos)_
 ### As Musicas Usadas foram:
-### As Musicas Usadas Foram:
+
 
 - AMOR E FÉ - HUNGRIA
 - BABY SE É GATA - DFIDELIZ
